@@ -22,10 +22,11 @@
         Jabatan <input type="text" required="required" name="jabatan" value="{{ $p->pegawai_jabatan }}"> <br/>
         Umur <input type="number" required="required" name="umur" value="{{ $p->pegawai_umur }}"> <br/>
         Alamat <textarea required="required" name="alamat">{{ $p->pegawai_alamat }}</textarea>
+        <input type="submit" value="Save Data">
     </form>
     @endforeach
 
 
-    
+
 </body>
 </html>
