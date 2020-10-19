@@ -15,9 +15,9 @@ class PegawaiSeeder extends Seeder
     {
         // 
 
-            $faker = Faker::create('id_UK');
+            $faker = Faker::create('id_JP');
 
-            for($i = 1; $i <= 50; $i++){
+            for($i = 1; $i <= 20; $i++){
 
                 // insert data to table pegawai used Faker
                 DB::table('pegawai')->insert([

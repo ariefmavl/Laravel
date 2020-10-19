@@ -6,6 +6,17 @@
     <title>Laravel #9 Foreign CRUD</title>
 </head>
 <body>
+
+
+    <style type="text/css">
+        .pagination li{
+            float: left;
+            list-style-type: none;
+            margin:5px;
+        }
+    </style>
+
+
 <h3>Data Pegawai</h3>
  
  <a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
@@ -35,6 +46,14 @@
      </tr>
      @endforeach
  </table>
+
+        <br/>
+        Halaman : {{ $pegawai->currentpage() }} <br/>
+        Jumlah Data : {{ $pegawai->total() }} <br/>
+        Data Per Halaman : {{ $pegawai->perPage() }} <br/>
+
+
+        {{ $pegawai->links() }}
 
 </body>
 </html>
