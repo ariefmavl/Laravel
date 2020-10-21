@@ -42,3 +42,7 @@ Route::post('/pegawai/store', 'PegawaiController@store');
 Route::get('pegawai/edit/{id}', 'PegawaiController@edit');
 Route::post('/pegawai/update', 'PegawaiController@update');
 Route::get('/pegawai/delete/{id}', 'PegawaiController@delete');
+
+//Route Validasi
+Route::get('/input', 'MaulanaController@input');
+Route::post('/proses', 'MaulanaController@proses');
